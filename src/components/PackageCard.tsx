@@ -45,8 +45,8 @@ const PackageCard = ({ title, price, duration, features, note, highlighted }: Pa
           <p className="text-xs text-muted-foreground italic">{note}</p>
         )}
 
-        <Button className="w-full rounded-full" variant={highlighted ? "default" : "outline"}>
-          Choose Plan
+        <Button className="w-full rounded-full min-h-[48px]" variant={highlighted ? "default" : "outline"}>
+          Choose {title}
         </Button>
       </div>
     </div>

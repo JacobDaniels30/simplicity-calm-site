@@ -62,10 +62,10 @@ const Home = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="rounded-full">
+                <Button asChild size="lg" className="rounded-full min-h-[48px]">
                   <Link to="/packages">View Our Packages</Link>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="rounded-full">
+                <Button asChild size="lg" variant="outline" className="rounded-full min-h-[48px]">
                   <a href="#contact">Get in Touch</a>
                 </Button>
               </div>
@@ -85,14 +85,14 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background" aria-labelledby="about-heading">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-6 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">About Simplicity</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <h2 id="about-heading" className="text-3xl md:text-4xl font-bold text-foreground">About Simplicity</h2>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               Simplicity is not just a business support company — it's a business based on <span className="text-primary font-medium">family, loyalty, and compassion</span>. We aim to create long-lasting bonds with our clients and their businesses, providing support that goes beyond just administrative tasks.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               We understand that every business is unique, which is why we offer personalized solutions tailored to your specific needs. Let us handle the complexities so you can focus on what matters most — growing your business.
             </p>
           </div>
@@ -100,11 +100,11 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-secondary/20">
+      <section className="py-20 bg-secondary/20" aria-labelledby="services-heading">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Services</h2>
-            <p className="text-lg text-muted-foreground">
+            <h2 id="services-heading" className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Services</h2>
+            <p className="text-base md:text-lg text-muted-foreground">
               Comprehensive solutions for all your administrative and HR needs
             </p>
           </div>
@@ -118,7 +118,7 @@ const Home = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button asChild size="lg" className="rounded-full">
+            <Button asChild size="lg" className="rounded-full min-h-[48px]">
               <Link to="/packages">Explore Our Packages</Link>
             </Button>
           </div>
@@ -126,12 +126,12 @@ const Home = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-background">
+      <section id="contact" className="py-20 bg-background" aria-labelledby="contact-heading">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Get in Touch</h2>
-              <p className="text-lg text-muted-foreground">
+              <h2 id="contact-heading" className="text-3xl md:text-4xl font-bold text-foreground mb-4">Get in Touch</h2>
+              <p className="text-base md:text-lg text-muted-foreground">
                 Ready to simplify your business? We're here to help.
               </p>
             </div>

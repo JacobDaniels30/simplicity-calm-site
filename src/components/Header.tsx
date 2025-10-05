@@ -40,18 +40,19 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="rounded-full">
+            <Button asChild className="rounded-full min-h-[44px]">
               <a href="#contact">Get in Touch</a>
             </Button>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="md:hidden h-11 w-11 flex items-center justify-center rounded-md hover:bg-accent transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
+            aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={isMenuOpen}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
           </button>
         </div>
 
@@ -72,7 +73,7 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="w-full rounded-full">
+            <Button asChild className="w-full rounded-full min-h-[44px]">
               <a href="#contact" onClick={() => setIsMenuOpen(false)}>
                 Get in Touch
               </a>

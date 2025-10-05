@@ -83,7 +83,7 @@ const ContactForm = () => {
         />
       </div>
 
-      <Button type="submit" disabled={isSubmitting} className="w-full rounded-full">
+      <Button type="submit" disabled={isSubmitting} className="w-full rounded-full min-h-[48px]">
         {isSubmitting ? "Sending..." : "Send Message"}
       </Button>
     </form>
