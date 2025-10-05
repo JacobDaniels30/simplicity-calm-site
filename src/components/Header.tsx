@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.jpeg";
 
 const Header = () => {
   const location = useLocation();
@@ -16,13 +17,12 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="flex items-center">
-              <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-semibold text-lg">S</span>
-              </div>
-              <span className="ml-3 text-xl font-semibold text-foreground">Simplicity</span>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img 
+              src={logo} 
+              alt="Simplicity - Simplify Your Life" 
+              className="h-12 md:h-14 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}

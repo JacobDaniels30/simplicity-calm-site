@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Facebook, Linkedin, Instagram } from "lucide-react";
+import logo from "@/assets/logo.jpeg";
 
 const Footer = () => {
   return (
@@ -7,12 +8,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center">
-              <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-semibold text-lg">S</span>
-              </div>
-              <span className="ml-3 text-xl font-semibold text-foreground">Simplicity</span>
-            </div>
+            <img 
+              src={logo} 
+              alt="Simplicity - Simplify Your Life" 
+              className="h-12 w-auto object-contain"
+            />
             <p className="text-sm text-muted-foreground">
               Making life easier since 2022. For all your Administrative and HR worries.
             </p>

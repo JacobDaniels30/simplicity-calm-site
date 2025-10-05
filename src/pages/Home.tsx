@@ -6,6 +6,7 @@ import ServiceCard from "@/components/ServiceCard";
 import ContactForm from "@/components/ContactForm";
 import { FileText, Users, Calendar, Award } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
+import logo from "@/assets/logo.jpeg";
 
 const Home = () => {
   const services = [
@@ -48,9 +49,13 @@ const Home = () => {
                 </span>
               </div>
               
-              <h1 className="text-5xl md:text-6xl font-bold text-foreground leading-tight">
-                Simplicity
-              </h1>
+              <div className="flex justify-center md:justify-start">
+                <img 
+                  src={logo} 
+                  alt="Simplicity - Simplify Your Life" 
+                  className="h-32 md:h-40 w-auto object-contain"
+                />
+              </div>
               
               <p className="text-xl md:text-2xl text-muted-foreground font-light">
                 For all your Administrative and HR worries — Making Life Easier.
